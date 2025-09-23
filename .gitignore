@@ -1,8 +1,12 @@
 # Ignore everything
 *
 
-# Allow Markdown files
+# Allow directories so unignored files in subdirectories are reachable
+!*/
+
+# Allow Markdown files in root and in any subdirectory
 !*.md
+!**/*.md
 
 # Allow the .gitignore itself so it can be committed
 !.gitignore
