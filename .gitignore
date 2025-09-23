@@ -1,1 +1,8 @@
-*.md
+# Ignore everything
+*
+
+# Allow Markdown files
+!*.md
+
+# Allow the .gitignore itself so it can be committed
+!.gitignore
