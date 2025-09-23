@@ -5,8 +5,8 @@
 !*/
 
 # Allow Markdown files in root and in any subdirectory
-!*.md
-!**/*.md
+## Allow only markdown files in repository root
+!/*.md
 
 # Allow the .gitignore itself so it can be committed
 !.gitignore
