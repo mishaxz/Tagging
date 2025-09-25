@@ -32,7 +32,17 @@ try hard to read file you can't find like source code and manuals, in docs subfo
 6. There is no `SETLIST` command... if there is no setlist mentioned or specified in the original txt file then it should be written as `Set1` before the songs
 
 ### Missing Text Files with Setlists
+
 1. if there is no `txt` file or there is not `txt` file with a setlist in it.. (e.g. it might be just checksums), then move it to a folder called `missing txt`
+
+### Early / Late Shows
+
+1. any _Show Folder_ which contains an Early and/or Late Show, should be moved into a folder of the parent folder called "Early Late Shows"
+2. other than that, they should not be processed. No `show.txt` created for them.
+
+### Album Venue and City Information
+
+1. don't forget to the include the City and State (or if not the USA, then City and Country) - after the Venue (and before the Source `[]` brackets
 
 ### Sources
 
@@ -113,6 +123,7 @@ Processing means to do the following:
 ### What you should NEVER do
 
 1. NEVER start processing any show folders which exist outside of the folder the user instructed you to process.. show folders which are subfolders or nested within the folder to process is ok, anything outside of it is not
+2. NEVER respect `.gitignore`, that is used just for `git` management of the markdown files that another tool uses
 
 ### Monitoring User Changes
 
@@ -125,3 +136,9 @@ Processing means to do the following:
 ## Wait for further instructions
 
 1. wait to be told what folders to process to begin processing it as per instructions in the "Processing" section above
+
+## Failed Tagging
+
+read `failed-tagging.md` for Instructions on how to _Sleuth_ the reasons the Tagging Failed on a _Show Folder_ 
+
+usually failed tagging ends up moved into a `failed-tagging` folder and successfully tagged shows get moved into a `tagged` folder, by _Show Taggers_
