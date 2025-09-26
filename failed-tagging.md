@@ -30,7 +30,7 @@ small track labels are usually worded something like:
 
 an `Encore Break` in a setlist should **always** be renamed to `Break` in the `show.txt`. This is because `Encore` is a keyword used to determine the start of an `Encore`
 
-if there is no indication of the start of an `Encore` like no `Encore` or `E:`, etc. preceeding the `Encore Break` line.. then `Encore Break` should be written as 2 lines `E:` and then `Break`... if it there is such an indication then just write `Break` on a line after the `Encore`, `E:` or whatever that indicates an `Encore` segment has been started
+if there is no indication of the start of an `Encore` like no `Encore` or `E:`, etc. preceding the `Encore Break` line.. then `Encore Break` should be written as 2 lines `E:` and then `Break`... if it there is such an indication then just write `Break` on a line after the `Encore`, `E:` or whatever that indicates an `Encore` segment has been started
 
 ## Reading the Filenames and Existing Tags
 
@@ -49,4 +49,14 @@ So if the Tag of the Existing file exactly matches the name in our `show.txt`, i
 #### Command Line Tag Reading Tools on Our System
 
 1. Kid3: `D:\PortableApps\Audio\Tagging\kid3-3.9.1-win32-x64\kid3-cli.exe`
-2. 
+
+## After Fixing all `failed-tagging` _Show Folders_
+
+### run Foobar2000
+
+run `Foobar2000` on all the _Show Folders_ that you have fixed, so that I can verify the songs are tagged correctly.
+
+> `Foobar2000` = `C:\Program Files\foobar2000\foobar2000.exe`
+
+1. it should be run _after_ _Show Taggers_ has been successfully run, not before
+2. on each show in the `tagged` folder.. sequentially, don't start the next Foobar2000 instance until the previous one has been closed

@@ -40,6 +40,27 @@ try hard to read file you can't find like source code and manuals, in docs subfo
 1. any _Show Folder_ which contains an Early and/or Late Show, should be moved into a folder of the parent folder called "Early Late Shows"
 2. other than that, they should not be processed. No `show.txt` created for them.
 
+### Artist Names
+
+#### Standardized List of Artist Names to use
+
+if the band's name is listed, use this standardized form of the name e.g. if _Merle Saunders & Jerry Garcia_ is encountered, use _Garcia & Saunders_
+
+| Standardize Artist Name for Tagging | Known Short Forms | Known Other Versions                 |                                  |
+|-------------------------------------|-------------------|--------------------------------------|----------------------------------|
+| Van Morrison                        | VM                | Van The Man                          |                                  |
+| Grateful Dead                       | GD                | The Grateful Dead                    |                                  |
+| Garcia & Grisman                    | GG                |                                      |                                  |
+| Garcia & Saunders                   | GS                |                                      |                                  |
+| Garcia & Kahn                       | GK                |                                      |                                  |
+| Garcia & Wales                      | GW                |                                      |                                  |
+| Jerrry Garcia                       | JG                |                                      | This is when he is solo acoustic |
+| Jerry Garcia Band                   | JGB               |                                      |                                  |
+| John Mayer                          | JM                |                                      |                                  |
+| John Mayer Trio                     |                   |                                      |                                  |
+| Legion of Mary                      | LOM               |                                      |                                  |
+| Reconstruction                      |                   |                                      |                                  |
+
 ### Album Venue and City Information
 
 1. don't forget to the include the City and State (or if not the USA, then City and Country) - after the Venue (and before the Source `[]` brackets
