@@ -37,8 +37,48 @@ try hard to read file you can't find like source code and manuals, in docs subfo
 
 ### Early / Late Shows
 
-1. any _Show Folder_ which contains an Early and/or Late Show, should be moved into a folder of the parent folder called "Early Late Shows"
-2. other than that, they should not be processed. No `show.txt` created for them.
+1. _Early_ (also known as _Matinee_ and _Late Shows_ are common for _Jerry Garcia Band_ shows.
+2. Usually _Show Folders_ contain just a _Single Show_, but sometimes they contain any combination of _Early_ and _Late Shows_
+3. e.g. just _Early_, just _Late_ or both _Early & Late Shows_
+
+#### `ALBUM` line 
+`ALBUM` line that contains the date should write the date as such for Early, Late or Early and Late Shows
+1. Early: YYYY-MM-DDa (e.g. 1980-01-02a)
+2. Late: YYYY-MM-DDb (e.g. 1980-01-02b)
+3. Early & Late: YYYY-MM-DDab (e.g. 1980-01-02ab)
+
+#### Sets
+
+##### when both _Early_ and _Late Shows_ are in the same _Show Folder_
+
+1. they have the same `show.txt`
+2. _Early Show_ is essentially to be treated as the _1st Set_ usually and _Late Show_ as the _2nd Set_
+3. so write in `show.txt` `Set 1` for _Early Show_ and `Set 2` for _Late Show_
+
+##### Example
+
+```
+Set 1 (Early Show)
+Song a
+Song b
+
+E: (Early Show Encore, optional)
+Song c
+
+Set 2 (Late Show)
+Song d
+Song e
+
+E: (Late Show Encore, optional)
+Song f
+```
+
+_just remember to have all the tracks in the correct, alphabetical order_
+
+#### File Locations of Early and Late Shows
+
+1. _Early_ and _Late_ shows might be all in the _Show Folder_ as a bunch of tracks
+2. but they might also be in subfolders of the _Show Folder_, for more about that see the section on _Show Folder Sub Folders_
 
 ### Artist Names
 
@@ -80,6 +120,16 @@ if the band's name is listed, use this standardized form of the name e.g. if _Me
 2. `[AUD | Beyer | Unknown` is an audience recording on Beyer mics but futher information is unknown `[AUD | Beyer | Unknown | Clugston` might mean all that but that it was released by Scott Clugston
 3. `[FOB | Menkes | Smith | Baker]` might mean FOB recording by Bob Menkes that was released by Smith but then that recording was edited for pitch correction and re-released by Baker
 
+### UltraMatrix
+
+- if an _Ultramatrix_ recording then try to include the source of the _UltraMatrix_, if mentioned. Usually this is `Healy` or `Pearson`
+- usually _Charlie Miller_ releases them, regardless of the source. So if it is a _Charlie Miller_ release then `Miller` is often included sometimes after.
+
+#### Examples
+1. `UltraMatrix SBD | Miller`
+2. `UltraMatrix SBD | Healy | Miller`
+3. `UltraMatrix SBD | Pearson | Miller`
+
 ### Partial Recordings
 
 1. when the recording is a _Partial Recording_ then the Set information should be listed before the `Source` in this compact way `[Sets; Source | Origin]` 
@@ -118,6 +168,16 @@ if the band's name is listed, use this standardized form of the name e.g. if _Me
 > Scarlet Begonias>
 > Fire On The Mountain>
 > Good Lovin'
+
+## Show Folder Sub Folders
+
+1. Usually tracks in _Show Folders_ are in the _Show Folder_ as all tracks in the same folder.
+2. _Show Tagger_ only supports tracks that are _all in the same folder_
+3. Therefore, if tracks are split up in multiple _subfolders_ then they must be moved into the parent (_Show Folder_) before tagging with _Show Taggers_
+4. The problem is that often they have the same filenames e.g. `\disc1\track1.mp3`, `disc2\track1.mp3`
+5. so these files with the same filenames need to be renamed before tagging
+6. and they must be renamed in order.. e.g. `disc1_track1.mp3`, `disc1_track2.mp3`, `disc2_track1.mp3` is good.. all in alphabetical order
+7. Early and Late Show example: `early/track1.m4a`, `late/track1.m4a` -> `early_track1.m4a`, `late_track1.m4a`... this is fine because `early_` comes before `late_` alphabetically
 
 ## MELD
 

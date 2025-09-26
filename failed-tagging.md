@@ -58,5 +58,5 @@ run `Foobar2000` on all the _Show Folders_ that you have fixed, so that I can ve
 
 > `Foobar2000` = `C:\Program Files\foobar2000\foobar2000.exe`
 
-1. it should be run _after_ _Show Taggers_ has been successfully run, not before
+1. it should be run _after_ _Show Taggers_ has been successfully run, not before. This is so that the USER can play some tracks to verify the tagging has been applied appropriately. NEVER run Foobar2000 before _Show Taggers_!
 2. on each show in the `tagged` folder.. sequentially, don't start the next Foobar2000 instance until the previous one has been closed
