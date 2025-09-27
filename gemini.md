@@ -53,7 +53,7 @@ try hard to read file you can't find like source code and manuals, in docs subfo
 
 1. they have the same `show.txt`
 2. _Early Show_ is essentially to be treated as the _1st Set_ usually and _Late Show_ as the _2nd Set_
-3. so write in `show.txt` `Set 1` for _Early Show_ and `Set 2` for _Late Show_
+3. so write in `show.txt` `Set 1 (Early Show)` for _Early Show_ and `Set 2 (Late Show)` for _Late Show_
 
 ##### Example
 
@@ -146,6 +146,7 @@ if the band's name is listed, use this standardized form of the name e.g. if _Me
 
 1. if the songs are numbered in the original txt file and there is a song with multiple lines but only the first line is numbered, then those lines should be compressed into one line. e.g. 8. A >\n B>\n >C should be A>B>C *(because they are **all the same track**)*
 2. if a song is split up over multiple lines and either has multiple different track numbers OR there are no track numbers for any of the songs, then DON'T put them all on the same line *(because they are **all separate tracks**)*   
+3. DON'T remove the _segue_ or _cuts_ markers in the _Song Title_, keep them in `show.txt`. e.g. `->`, `>`, `//`, etc. these aren't all the possible symbols used, just some examples. These are useful for the listener to see.
 
 #### Examples
 

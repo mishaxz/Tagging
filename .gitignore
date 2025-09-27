@@ -1,3 +1,6 @@
+# GEMINI: do not use this .gitignore file! it is not for you, it is for committing changes to markdown files
+#         the files you need to process are ignored by this .gitignore
+
 # Ignore everything
 *
 

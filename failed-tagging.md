@@ -2,6 +2,11 @@
 
 1. go through the `failed-tagging` folder for each _Show Folder_ there to try to determine what the cause is most likely as to why it failed
 
+## Logs
+
+1. on failure there `tag_failure.log`, check this first
+2. on sucesss there _may be_ a `tag_sucess.log` but this is often not written so that the _Show Folders_ don't get cluttered with them.
+
 ## Files
 
 on tagging failure, try to determine:
